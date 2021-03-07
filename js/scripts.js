@@ -18,32 +18,31 @@ function Image(title, url, author, color, tags) {
 	this.tags = tags;
 	this.display = function() {
 		var imageString = "";
-		imageString += "<div>";
-		imageString += "<div style='background-image:" + this.url + ")'>";
+		imageString += "<div class = 'unit'>";
+		imageString += "<div class='border' style='background-image:" + this.url + ")'>";
 		imageString += "</div>";
+		imageString += "<div class = 'info'>";
 		imageString += "<h1>" + this.title + "</h1>";
 		imageString += "<h2>" + this.author + "</h2>";
 		imageString += "</div>";
-		$("body").prepend(imageString);
+		imageString += "</div>";
+		$("main").prepend(imageString);
 	}
 }
+var images = [
+	new Image("Peace in a Moment", "wheat1.jpg", "Rylee Frank", ["nature", "winter", "plant"]),
+	new Image("Frozen in Time", "frozen1.jpg", "Rylee Frank", ["nature", "winter", "waterfall"]),
+	new Image("Grow Tall", "growth1.jpg", "Rylee Frank", ["nature", "plant", "tree"]),
+	new Image("Stand Strong", "canyon-21.jpg", "Rylee Frank", ["nature", "tree", "canyon", "winter", "view"]),
+	new Image("Cut Your Own Path", "canyon1.jpg", "Rylee Frank", ["nature", "canyon", "winter"]),
+	new Image("Look Ahead", "mountain-view11.jpg", "Rylee Frank", ["nature", "view", "mountain"]),
+	new Image("Clarity", "reflection1.jpg", "Rylee Frank", ["nature", "water", "mountain"]),
+	new Image("Just Keep Moving", "snowy-stream1.jpg", "Rylee Frank", ["nature", "winter", "water"]),
+	new Image("Push Forward", "uphill1.jpg", "Rylee Frank", ["nature", "mountain", "plant"]),
+	new Image("Prepare to Fall", "waterfall1.jpg", "Rylee Frank", ["nature", "waterfall", "water", "mountain"]),
+	new Image("Go With the Flow", "stream1.jpg", "Rylee Frank", ["nature", "waterfall", "water"]),
+]
 
-var img1 = new Image("Peace in a Moment", "wheat1.jpg", "Rylee Frank", ["nature", "winter", "plant"]);
-var img2 = new Image("Frozen in Time", "frozen1.jpg", "Rylee Frank", ["nature", "winter", "waterfall"]);
-var img3 = new Image("Grow Tall", "growth1.jpg", "Rylee Frank", ["nature", "plant", "tree"]);
-var img4 = new Image("Stand Strong", "canyon-21.jpg", "Rylee Frank", ["nature", "tree", "canyon", "winter", "view"]);
-var img5 = new Image("Cut Your Own Path", "canyon1.jpg", "Rylee Frank", ["nature", "canyon", "winter"]);
-var img6 = new Image("Look Ahead", "mountain-view11.jpg", "Rylee Frank", ["nature", "view", "mountain"]);
-var img7 = new Image("Clarity", "reflection1.jpg", "Rylee Frank", ["nature", "water", "mountain"]);
-var img8 = new Image("Just Keep Moving", "snowy-stream1.jpg", "Rylee Frank", ["nature", "winter", "water"]);
-var img9 = new Image("Push Forward", "uphill1.jpg", "Rylee Frank", );
-var img10 = new Image();
-
-img1.display();
-img2.display();
-img3.display();
-img4.display();
-img5.display();
-img6.display();
-img7.display();
-img8.display();
+images.forEach(function(image){
+	image.display();
+})

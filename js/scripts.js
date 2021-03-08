@@ -1,7 +1,7 @@
 
 function Image (title, url, author, tags) {
 	this. title = title;
-	this.url = "imgs/" + url;
+	this.url = "url(imgs/" + url;
 	this.author = author;
 	this.tags = tags;
 

@@ -1,15 +1,3 @@
-// var img = {
-// 	title: 'Peace in a Moment',
-// 	url: "imgs/wheat.jpeg",
-// 	tags: ["nature","snow","prairies"],
-// 	display: function(){
-// 		var imageString = "";
-// 		imageString += "<div style='background-image:" + this.img + "'>";
-// 		imageString += "<cite>" + this.author + "</cite>";
-// 		imageString += "</div>";
-// 		$("body").prepend(imageString);
-// 	}
-// }
 
 function Image(title, url, author, color, tags) {
 	this.title = title;
@@ -40,9 +28,17 @@ var images = [
 	new Image("Just Keep Moving", "snowy-stream1.jpg", "Rylee Frank", ["nature", "winter", "water"]),
 	new Image("Push Forward", "uphill1.jpg", "Rylee Frank", ["nature", "mountain", "plant"]),
 	new Image("Prepare to Fall", "waterfall1.jpg", "Rylee Frank", ["nature", "waterfall", "water", "mountain"]),
-	new Image("Go With the Flow", "stream1.jpg", "Rylee Frank", ["nature", "waterfall", "water"]),
+	new Image("Go With the Flow", "stream1.jpg", "Rylee Frank", ["nature", "waterfall", "water"])
 ]
 
+var tagList = []
 images.forEach(function(image){
 	image.display();
-})
+	image.tags.forEach(function(tag){
+		// if(!tagList.includes(tag)) {
+		// 	tagList.push(tag);
+		// 	$(".buttons").prepend("<button class = 'filter'>" + tag + "</button>")
+		}
+	})
+
+console.log(tagList);

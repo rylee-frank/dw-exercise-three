@@ -5,16 +5,21 @@ function Image(title, url, author, color, tags) {
 	this.author = author;
 	this.tags = tags;
 	this.display = function() {
+		var container = $("<div>")
+		this.tags.forEach(function(tag){
+			container.addClass(tag);
+		})
+		container.css("background-image", this.url)
+		container.addClass("unit")
+
 		var imageString = "";
-		imageString += "<div class = 'unit'>";
-		imageString += "<div class='border' style='background-image:" + this.url + ")'>";
-		imageString += "</div>";
 		imageString += "<div class = 'info'>";
 		imageString += "<h1>" + this.title + "</h1>";
 		imageString += "<h2>" + this.author + "</h2>";
 		imageString += "</div>";
-		imageString += "</div>";
-		$("main").prepend(imageString);
+
+		container.html(imageString)
+		$(".unit").prepend(container);
 	}
 }
 var images = [
@@ -38,7 +43,7 @@ images.forEach(function(image){
 		// if(!tagList.includes(tag)) {
 		// 	tagList.push(tag);
 		// 	$(".buttons").prepend("<button class = 'filter'>" + tag + "</button>")
-		}
 	})
+})
 
 console.log(tagList);

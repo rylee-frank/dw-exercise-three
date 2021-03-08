@@ -28,18 +28,18 @@ function Image (title, url, author, tags) {
 }
 
 var Images = [
+new Image("Clarity", "reflection1.jpg", "Rylee Frank", ["nature", "water", "mountain"]),
+new Image("Go Where You Must", "waterfall2.jpg", "Rylee Frank", ["nature", "waterfall", "water", "tree"]),
+new Image("Look Ahead", "mountain-view.jpg", "Rylee Frank", ["nature", "view", "mountain"]),
+new Image("Just Keep Moving", "snowy-stream.jpg", "Rylee Frank", ["nature", "winter", "water"]),
+new Image("Push Forward", "uphill.jpg", "Rylee Frank", ["nature", "mountain", "plant"]),
+new Image("Prepare to Fall", "waterfall1.jpg", "Rylee Frank", ["nature", "waterfall", "water", "mountain"]),
+new Image("Go With the Flow", "stream.jpg", "Rylee Frank", ["nature", "waterfall", "water"]),
 new Image("Peace in a Moment", "wheat.jpg", "Rylee Frank", ["nature", "winter", "plant"]),
 new Image("Frozen in Time", "frozen1.jpg", "Rylee Frank", ["nature", "winter", "waterfall"]),
 new Image("Grow Tall", "growth1.jpg", "Rylee Frank", ["nature", "plant", "tree"]),
-new Image("Stand Strong", "canyon-21.jpg", "Rylee Frank", ["nature", "tree", "canyon", "winter", "view"]),
-new Image("Cut Your Own Path", "canyon1.jpg", "Rylee Frank", ["nature", "canyon", "winter"],
-new Image("Look Ahead", "mountain-view11.jpg", "Rylee Frank", ["nature", "view", "mountain"]),
-new Image("Clarity", "reflection1.jpg", "Rylee Frank", ["nature", "water", "mountain"]),
-new Image("Just Keep Moving", "snowy-stream1.jpg", "Rylee Frank", ["nature", "winter", "water"]),
-new Image("Push Forward", "uphill1.jpg", "Rylee Frank", ["nature", "mountain", "plant"]),
-new Image("Prepare to Fall", "waterfall1.jpg", "Rylee Frank", ["nature", "waterfall", "water", "mountain"]),
-new Image("Go With the Flow", "stream1.jpg", "Rylee Frank", ["nature", "waterfall", "water"]),
-new Image("Go Where You Must", "waterfall2.jpg", "Rylee Frank", ["nature", "waterfall", "water", "tree"])
+new Image("Stand Strong", "canyon-2.jpg", "Rylee Frank", ["nature", "tree", "canyon", "winter", "view"]),
+new Image("Cut Your Own Path", "canyon1.jpg", "Rylee Frank", ["nature", "canyon", "winter"]
 
 )]
 var tagList = []
